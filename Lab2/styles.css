@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 1980px;
+    height: 1080px;
+    background-size: cover;
+    background-image: url(./Img/seling_result.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.main_box {
+    border-radius: 15px;
+    box-shadow: 5px 10px 50px rgba(6, 199, 93, 0.267);
+    border: 2px solid #020000;
+    height: 1000px;
+    width: 800px;
+    margin: 5px;
+    background-color: rgba(63, 124, 238, 0.1);
+    position: absolute;
+    left: 550px;
+}
+
+.head {
+    display: flex;
+    position: relative;
+    width: 785px;
+    height: 280px;
+    margin: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.head>.p>img {
+    opacity: 0.8;
+    border-radius: 25px;
+    position: relative;
+    margin: 10px;
+    max-width: 100%;
+    flex: 1;
+    border: 2px solid black;
+}
+
+.head>.itd {
+    position: relative;
+    opacity: 0.9;
+    border-radius: 25px;
+    max-width: 100%;
+    flex: 3;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.main_box>.head>.itd .name {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.itd p {
+    margin: 5px;
+}
+
+.itd>.city>a {
+    color: #020000;
+    outline: none;
+}
+
+@keyframes my_city {
+
+    0% {
+        background-color: rgba(0, 245, 171, 0.6);
+    }
+
+    25% {
+        background-color: rgba(0, 85, 57, 0.8);
+    }
+
+    50% {
+        background-color: rgba(0, 98, 184, 0.6);
+    }
+
+    75% {
+        background-color: rgba(39, 116, 204, 0.8)
+    }
+
+    100% {
+        background-color: rgba(0, 245, 171, 0.6);
+    }
+
+}
+
+.city {
+    animation: my_city 2.5s linear 0.2ms infinite normal paused;
+}
+
+.city:hover {
+    box-shadow: 5px 5px 10px blue;
+    opacity: 0.8;
+    animation-play-state: running;
+}
+
+.d {
+    margin: 10px;
+    border-radius: 25px;
+    width: 775px;
+    height: 600px;
+
+}
+
+.d1,
+.d2,
+.d3 {
+    border-radius: 25px;
+    border: 2px solid black;
+    height: 170px;
+    width: 755px;
+    margin: 10px;
+}
+
+.d1>h1>a {
+    outline: none;
+    color: rgba(1, 20, 14);
+}
